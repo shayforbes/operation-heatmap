@@ -5,7 +5,7 @@ import plotly.express as px
 
 # Load the Excel data
 reports_df = pd.read_excel("Operation Heatmap (1).xlsx", sheet_name='Reports')
-cbsa_coords_df = pd.read_csv("cbsa_coordinates_sample.csv")
+cbsa_coords_df = pd.read_csv("cbsa_coordinates_full.csv")
 
 # Merge CBSA coordinates into the main dataframe
 cbsa_coords_df = cbsa_coords_df[["CBSA", "Latitude", "Longitude"]]
